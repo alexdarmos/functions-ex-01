@@ -18,17 +18,18 @@ let radiusArg = parseInt(prompt("What is the radius of your circle?"));
 
 //exercise pt.2
 (() =>  {
+  //function calculates circumference
   const getCircumferenceOfCircle = (radius) =>  {
-  let circumference = (2 * (Math.PI * radius)).toFixed(2);
-  return circumference;
-}
-console.log(`The circumference of the circle is ${getCircumferenceOfCircle(radiusArg)}`);
+    let circumference = (2 * (Math.PI * radius)).toFixed(2);
+    return circumference;
+  }
+  //passes argument into function and logs it
+  console.log(`The circumference of the circle is ${getCircumferenceOfCircle(radiusArg)}`);
 })();
 
 
 
 //exercise pt.3
-
 (() =>  {
   let sideArg = parseInt(prompt("What is the length of the side of your square?"));
   //takes user input for side parameter
@@ -36,7 +37,7 @@ console.log(`The circumference of the circle is ${getCircumferenceOfCircle(radiu
     let area = Math.pow(length, 2).toFixed(2);
     return area;
   }
-
+  //passes argument into function and logs it
   console.log(`The area of the square is ${getAreaOfSquare(sideArg)}`);
 })();
 
@@ -51,6 +52,6 @@ console.log(`The circumference of the circle is ${getCircumferenceOfCircle(radiu
     let area = ((base * height)/2).toFixed(2);
     return area;
   }
-
+  //passes argument into function and logs it
   console.log(`The area of the triangle is ${getAreaOfTriangle(baseArg, heightArg)}`);
 })();
